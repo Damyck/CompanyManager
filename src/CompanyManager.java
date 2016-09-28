@@ -9,7 +9,7 @@ public interface CompanyManager{
     public void addEmployee(String DNI, String name, double salary, String dept);
     public void addSalesMan(String DNI, String name, double salary, String dept);
     public void addDirector(String DNI, String name, double salary, String dept);
-    public Vector deps();
-    
+    public void deps();
+
 
 }
