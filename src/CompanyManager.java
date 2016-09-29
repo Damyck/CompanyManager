@@ -5,11 +5,11 @@ import java.util.Vector;
  */
 public interface CompanyManager{
 
-    public void addDept(String name, String description);
-    public void addEmployee(String DNI, String name, double salary, String dept);
-    public void addSalesMan(String DNI, String name, double salary, String dept);
-    public void addDirector(String DNI, String name, double salary, String dept);
-    public void deps();
+    void addDept(String name, String description);
+    void addEmployee(String DNI, String name, String dept);
+    void addSalesMan(String DNI, String name, String dept);
+    void addDirector(String DNI, String name, String dept);
+    void deps();
 
 
 }
