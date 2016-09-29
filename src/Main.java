@@ -6,6 +6,7 @@ public class Main {
 
         ComManIMpls th = new ComManIMpls();
         th.addDeps("Barnaclub","La mejor empresa del mundo mundial.");
+        th.addDeps("Adria","L'Adria mola, un xic.");
         th.deps();
     }
 }
