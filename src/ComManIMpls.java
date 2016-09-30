@@ -55,5 +55,9 @@ public class ComManIMpls{
 
         }
     }
+    public void addDirecrtor(){
+        //añadir funcion para crear director de departamento
+    }
+
 
 }

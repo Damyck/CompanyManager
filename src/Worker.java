@@ -19,13 +19,18 @@ public class Worker{
     }
 
 }
-
-class Employee {
+class Employee { //clase donde se define el salario de cada trabajador
 
     public double EmployeeSalary;
 
+}
+class SalesMan{ //clase donde se define el numero de ventas de cada trabajador
+    public double NumOfSales;
+     //sales + 5% sales
 
 }
-class SalesMan{
+class Director{ //clase donde se define el numero de ventas de cada trabajador
+    public double DirectorSalary;
+    //sales + 5% sales
 
 }

@@ -10,6 +10,6 @@ public class Main {
         cm.deps();
         cm.addEmployee("Marc", "45637X", 1340.56, "Barnaclub");
         cm.Employees();
-
+        //añadiré un menú para pedir datos por teclado y recogerlos, o exponer la situacion de la empresa.
     }
 }
