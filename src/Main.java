@@ -3,7 +3,7 @@
  */
 public class Main {
     public static void main(String[] args){
-
+        //pruebagit
         ComManIMpls cm = new ComManIMpls();
         cm.addDeps("Barnaclub","La mejor empresa del mundo mundial.");
         cm.addDeps("Adria","L'Adria mola, un xic.");
