@@ -24,10 +24,17 @@ public class ComManIMpls implements CompanyManager{
 
 
 
+
+
+
     public void addSalesMan(String DNI, String name, String dept) {
 
     }
 
+    @Override
+    public void addDirector(String DNI, String name, String dept) {
+
+    }
 
     public void deps() {
 
@@ -60,9 +67,6 @@ public class ComManIMpls implements CompanyManager{
             System.out.println(worku.Name + " " + worku.DNI + " " + worku.Salary + " " + worku.Department + " " + worku.Type);
 
         }
-    }
-    public void addDirector(String DNI, String name, String dept){
-        //añadir funcion para crear director de departamento
     }
 
 

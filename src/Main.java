@@ -13,12 +13,13 @@ public class Main extends ComManIMpls{
             System.out.print("Seleccione la opción que desea:");
             System.out.println("1.- Crear departamento");
             System.out.println("2.- Añadir empleado");
-            System.out.println("3.- Faltan añadir cosas");
+            System.out.println("3.- Añadir sales man");
+            System.out.println("4.- Añadir director");
             System.out.println("0.- Salir");
 
             op = getInt();
             switch (op) {
-                case 1:
+                case 1: //Crear departamento
                     System.out.println("Introduzca el nombre del departamento:");
                     String nombre= getString();
                     System.out.println("Escriba una breve descripcion de referencia:");
@@ -27,7 +28,7 @@ public class Main extends ComManIMpls{
                     System.out.println("El siguiente departamento ha sido añadido correctamente: "+nombre);
                     break;
 
-                case 2:
+                case 2: //Añadir empleado
                     System.out.println("Introduzca el nombre del empleado:");
                     String name= getString();
                     System.out.println("Introduzca el DNI:");
@@ -41,18 +42,36 @@ public class Main extends ComManIMpls{
                     break;
 
 
-                case 3:
-                    ;
+                case 3: //Añadir SalesMan
+                    System.out.println("Introduzca el nombre:");
+                    String nameSalesMan= getString();
+                    System.out.println("Introduzca el DNI:");
+                    String dniSalesMan=getString();
+                    System.out.println("Introduzca el departamento:");
+                    String departamentoSalesMan = getString();
+                    nueva.addSalesMan(nameSalesMan, dniSalesMan, departamentoSalesMan); //falta crear funcion añadir_salesman
+                    System.out.println("El siguiente salesman ha sido añadido correctamente: "+nameSalesMan);
+                    break;
+
+                case 4:  //Añadir director
+                    System.out.println("Introduzca el nombre del director:");
+                    String nameDirector= getString();
+                    System.out.println("Introduzca el DNI:");
+                    String dniDirector=getString();
+                    System.out.println("Introduzca el departamento:");
+                    String departamentoDirector = getString();
+                    nueva.addDirector(nameDirector, dniDirector, departamentoDirector); //falta crear funcion añadir_director
+                    System.out.println("El siguiente director ha sido añadido correctamente: "+nameDirector);
                     break;
             }
         }
-            ComManIMpls cm = new ComManIMpls();
-            cm.addDept("Barnaclub", "La mejor empresa del mundo mundial.");
-            cm.addDept("Adria", "L'Adria mola, un xic.");
-            cm.deps();
-            cm.addEmployee("Marc", "45637X", 1340.56, "Barnaclub");
-            cm.Employees();
-            //añadiré un menú para pedir datos por teclado y recogerlos, o exponer la situacion de la empresa.
+           // ComManIMpls cm = new ComManIMpls();
+            //cm.addDept("Barnaclub", "La mejor empresa del mundo mundial.");
+            //cm.addDept("Adria", "L'Adria mola, un xic.");
+            //cm.deps();
+            //cm.addEmployee("Marc", "45637X", 1340.56, "Barnaclub");
+           // cm.Employees();
+
 
         }
 
