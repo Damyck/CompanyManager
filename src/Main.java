@@ -1,8 +1,6 @@
 /**
  * Created by Marc on 28/9/2016.
  */
-import java.util.Scanner;
-import java.util.*;
 import java.io.*;
 
 public class Main extends ComManIMpls{
@@ -30,8 +28,19 @@ public class Main extends ComManIMpls{
                     break;
 
                 case 2:
-                    ;
+                    System.out.println("Introduzca el nombre del empleado:");
+                    String name= getString();
+                    System.out.println("Introduzca el DNI:");
+                    String dni=getString();
+                    System.out.println("Introduzca el salario:"); //diria que no se tiene que añadir el salario aqui, sino
+                    Double salary= getDouble();                  //que se tiene que calcular automaticamente
+                    System.out.println("Introduzca el departamento:");
+                    String departamento = getString();
+                    nueva.addEmployee(name, dni, salary, departamento);
+                    System.out.println("El siguiente empleado ha sido añadido correctamente: "+name);
                     break;
+
+
                 case 3:
                     ;
                     break;
@@ -55,6 +64,11 @@ public class Main extends ComManIMpls{
         return s;
     }
 
+    // Funcion para capturar un double desde el teclado
+    public static double getDouble() throws IOException {
+        String s = getString();
+        return Double.parseDouble(s);
+    }
     // Funcion para capturar un entero desde el teclado
     public static int getInt() throws IOException {
         String s = getString();
