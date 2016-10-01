@@ -25,12 +25,15 @@ class Employee { //clase donde se define el salario de cada trabajador
 
 }
 class SalesMan{ //clase donde se define el numero de ventas de cada trabajador
-    public double NumOfSales;
-     //sales + 5% sales
+    private double salario;
+    private double ventasEnEuros;
+    public double salary() {
+        //El salario de SalesMan es su salario + el 10% de las ventas totales que haga
+        return (salario+(ventasEnEuros*10/100));
 
 }
-class Director{ //clase donde se define el numero de ventas de cada trabajador
+class Director2 { //clase donde se define el numero de ventas de cada trabajador
     public double DirectorSalary;
     //sales + 5% sales
-
+}
 }

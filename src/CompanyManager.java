@@ -6,7 +6,7 @@ import java.util.Vector;
 public interface CompanyManager{
 
     void addDept(String name, String description);
-    void addEmployee(String DNI, String name, String dept);
+    void addEmployee(String DNI, String name, double Salary, String dept);
     void addSalesMan(String DNI, String name, String dept);
     void addDirector(String DNI, String name, String dept);
     void deps();

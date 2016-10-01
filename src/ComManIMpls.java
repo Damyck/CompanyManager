@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created by Marc on 28/9/2016.
  */
-public class ComManIMpls{
+public class ComManIMpls implements CompanyManager{
 
     public int numDeps = 0;
     int i;
@@ -15,12 +15,18 @@ public class ComManIMpls{
     public int numWorks = 0;
 
 
-    public void addDeps(String name, String desc){
+    public void addDept(String name, String desc){
         Department dep = new Department(name, desc);
         deps.add(dep);
         numDeps++;
 
         }
+
+
+
+    public void addSalesMan(String DNI, String name, String dept) {
+
+    }
 
 
     public void deps() {
@@ -55,7 +61,7 @@ public class ComManIMpls{
 
         }
     }
-    public void addDirecrtor(){
+    public void addDirector(String DNI, String name, String dept){
         //añadir funcion para crear director de departamento
     }
 
