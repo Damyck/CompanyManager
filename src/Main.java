@@ -120,7 +120,6 @@ public class Main extends ComManIMpls{
                             int numero = getInt();
                             nueva.EmployeeByDepartment(dept,numero);
 
-
                             break;
                         case 3: //Lista de empleados
                             nueva.Employees();

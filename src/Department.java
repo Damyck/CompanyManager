@@ -1,6 +1,7 @@
 /**
  * Created by Marc on 28/9/2016.
  */
+//clase departamento
 public class Department{
 
     public String Name;
