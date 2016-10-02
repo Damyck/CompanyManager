@@ -9,15 +9,22 @@ public class Main extends ComManIMpls{
 
     static ComManIMpls nueva= new ComManIMpls();
     public static void main(String[] args) throws IOException {
+
+        ComHashMap DHashMap = new ComHashMap();
+
         nueva.addDept("Barnaclub", "La mejor empresa del mundo mundial.");
         nueva.addDept("Adria", "L'Adria mola, un xic.");
         nueva.addEmployee("Marc", "45637X", 1340.56, "Barnaclub");
-        int op = 5;
+        int op = 9;
         while (op != 0) {
             System.out.println("\n\n BIENVENIDO:");
             System.out.print("Seleccione la opción que desea:");
             System.out.println("1.- Añadir datos");
             System.out.println("2.- Consultar datos");
+            System.out.println("5.- Lista de departamentos");
+            System.out.println("6.- Lista de empleados por nombre");
+            System.out.println("7.- Lista de empleados por salario");
+            System.out.println("8.- Lista de empleados por departamentos");
             System.out.println("0.- Salir");
             op = getInt();
 
