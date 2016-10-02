@@ -20,11 +20,9 @@ public class Main extends ComManIMpls{
             System.out.println("\n\n BIENVENIDO:");
             System.out.print("Seleccione la opción que desea:");
             System.out.println("1.- Añadir datos");
-            System.out.println("2.- Consultar datos");
-            System.out.println("5.- Lista de departamentos");
-            System.out.println("6.- Lista de empleados por nombre");
-            System.out.println("7.- Lista de empleados por salario");
-            System.out.println("8.- Lista de empleados por departamentos");
+            System.out.println("2.- Consultar diferentes datos");
+
+
             System.out.println("0.- Salir");
             op = getInt();
 
@@ -101,9 +99,12 @@ public class Main extends ComManIMpls{
                     break;
                 case 2: //Consultar Datos
                     System.out.print("¿Que datos desea consultar?");
-                    System.out.println("1.- Numero de Departamentos");
-                    System.out.println("2.- Numero de trabajadores y salario segun departamento");
+                    System.out.println("1.- Lista de Departamentos");
+                    System.out.println("2.- Lista de trabajadores y salario segun departamento");
                     System.out.println("3.- Numero de Empleados");
+                    //se tienen que añadir los siguientes dos, dentro del case 2-consultar datos.
+                    System.out.println("4.- Lista de empleados por nombre");
+                    System.out.println("5.- Lista de empleados por salario");
                     System.out.println("0.- Salir");
 
                     op = getInt();
