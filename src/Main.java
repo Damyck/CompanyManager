@@ -26,7 +26,8 @@ public class Main extends ComManIMpls{
                     System.out.println("1.- Crear departamento");
                     System.out.println("2.- Añadir empleado");
                     System.out.println("3.- Añadir sales man");
-                    System.out.println("4.- Añadir director");
+                    System.out.println("4.- Añadir venta");
+                    System.out.println("5.- Añadir director");
                     System.out.println("0.- Salir");
                     op = getInt();
                     switch (op) {
@@ -67,8 +68,17 @@ public class Main extends ComManIMpls{
                             nueva.addSalesMan(nameSalesMan, dniSalesMan, salarySalesMan, departamentoSalesMan, salesSalesMan); //falta crear funcion añadir_salesman
                             System.out.println("El siguiente salesman ha sido añadido correctamente: " + nameSalesMan);
                             break;
+                        case 4: //Añadir venta
+                            System.out.println("Introduzca el dni:");
+                            String dniSM = getString();
+                            System.out.println("Añade la venta:");
+                            Double venta= getDouble();
+                            //crear bien la funcion addSale-para añadir una venta
+                            nueva.addSale(dniSM, venta);
 
-                        case 4:  //Añadir director
+
+
+                        case 5:  //Añadir director
                             System.out.println("Introduzca el nombre del director:");
                             String nameDirector = getString();
                             System.out.println("Introduzca el DNI:");

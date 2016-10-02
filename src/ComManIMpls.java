@@ -50,7 +50,7 @@ public class ComManIMpls implements CompanyManager{
         numWorks++;
 
     }
-
+    //funcion que printa por pantalla la lista de empleados(nombre, dni, salario, departamento y tipo
     public void Employees() {
 
         for (int i = 0; i < numWorks; i++) {
@@ -62,6 +62,7 @@ public class ComManIMpls implements CompanyManager{
     }
     @Override
 
+    //funcion que añade un SalesMan (nombre, dni, salario, departamento y ventas
     public void addSalesMan(String Name, String DNI, double Salary, String Department, double Sales) {
 
         String type = "SalesMan";
@@ -74,7 +75,8 @@ public class ComManIMpls implements CompanyManager{
         numWorks++;
     }
 
-    public double EmployeeByDepartment(String Department, int devolver){//Devuelve todos los trabajadores de un departamento
+    //funcion que devuelve trabajadores de un mismo departamento (y/o su salario)
+    public double EmployeeByDepartment(String Department, int devolver){
         int numWor = 0;
         List<Worker> wor = new ArrayList<Worker>();
         double salary = 0;
@@ -107,7 +109,7 @@ public class ComManIMpls implements CompanyManager{
 
     }
 
-    @Override
+    //funcion que añade un director de departamento--> Nombre, dni, salario y departamento
     public void addDirector(String Name, String DNI, double Salary, String Department) {
         double TotalSalary = this.EmployeeByDepartment(Department, 0);
         String type = "Director";
@@ -118,6 +120,10 @@ public class ComManIMpls implements CompanyManager{
         Worker work = new Worker(Name, DNI, salary, Department, type);
         works.add(work);
         numWorks++;
+
+    }
+
+    public void addSale(String dni, double venta){
 
     }
 
