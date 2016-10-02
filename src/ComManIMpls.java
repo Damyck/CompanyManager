@@ -17,6 +17,7 @@ public class ComManIMpls implements CompanyManager{
     public int numWorks = 0;
 
 
+    //funcion para añadir departamento--> nombre y descripcion
     public void addDept(String name, String desc){
         Department dep = new Department(name, desc);
         deps.add(dep);
@@ -25,6 +26,7 @@ public class ComManIMpls implements CompanyManager{
         }
 
 
+    //funcion que printa por pantalla los departamentos (nombre y descripcion)
     public void deps() {
 
         for (int i = 0; i < numDeps; i++) {
@@ -37,6 +39,7 @@ public class ComManIMpls implements CompanyManager{
 
     }
 
+    //funcion para añadir empleado--> nombre, dni, salario y departamento
     public void addEmployee(String Name, String DNI, double Salary, String Department){
 
         String type = "Employee";
