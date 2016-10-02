@@ -50,14 +50,15 @@ public class Main extends ComManIMpls{
                             String name = getString();
                             System.out.println("Introduzca el DNI:");
                             String dni = getString();
-                            System.out.println("Introduzca el salario:"); //diria que no se tiene que añadir el salario aqui, sino
-                            Double salary = getDouble();                  //que se tiene que calcular automaticamente
+                            System.out.println("Introduzca el salario:");
+                            //diria que no se tiene que añadir el salario aqui, sino
+                            //que se tiene que calcular automaticamente
+                            Double salary = getDouble();
                             System.out.println("Introduzca el departamento:");
                             String departamento = getString();
                             nueva.addEmployee(name, dni, salary, departamento);
                             System.out.println("El siguiente empleado ha sido añadido correctamente: " + name);
                             break;
-
 
                         case 3: //Añadir SalesMan
                             System.out.println("Introduzca el nombre:");
@@ -73,12 +74,14 @@ public class Main extends ComManIMpls{
                             nueva.addSalesMan(nameSalesMan, dniSalesMan, salarySalesMan, departamentoSalesMan, salesSalesMan); //falta crear funcion añadir_salesman
                             System.out.println("El siguiente salesman ha sido añadido correctamente: " + nameSalesMan);
                             break;
+
                         case 4: //Añadir venta
                             System.out.println("Introduzca el dni:");
                             String dniSM = getString();
                             System.out.println("Añade la venta:");
                             Double venta= getDouble();
                             //crear bien la funcion addSale-para añadir una venta
+                            //esta creada y se le pasan estos valores, pero no hace nada. Habria que reestructurar
                             nueva.addSale(dniSM, venta);
 
 
@@ -103,6 +106,7 @@ public class Main extends ComManIMpls{
                     System.out.println("2.- Lista de trabajadores y salario segun departamento");
                     System.out.println("3.- Numero de Empleados");
                     //se tienen que añadir los siguientes dos, dentro del case 2-consultar datos.
+                    //funciones pedidas en el ejercicio
                     System.out.println("4.- Lista de empleados por nombre");
                     System.out.println("5.- Lista de empleados por salario");
                     System.out.println("0.- Salir");
@@ -112,6 +116,7 @@ public class Main extends ComManIMpls{
                         case 1: //Lista de departamentos
                             nueva.deps();
                             break;
+
                         case 2: //Lista de departamentos
                             System.out.println("Introduzca el departamento:");
                             String dept = getString();
@@ -119,8 +124,8 @@ public class Main extends ComManIMpls{
                             System.out.println("Introduzca 1 si desea obtener su salario");
                             int numero = getInt();
                             nueva.EmployeeByDepartment(dept,numero);
-
                             break;
+
                         case 3: //Lista de empleados
                             nueva.Employees();
                             break;
