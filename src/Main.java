@@ -84,8 +84,9 @@ public class Main extends ComManIMpls{
                     break;
                 case 2: //Consultar Datos
                     System.out.print("¿Que datos desea consultar?");
-                    System.out.println("1.- Departamentos");
-                    System.out.println("2.- Empleados");
+                    System.out.println("1.- Numero de Departamentos");
+                    System.out.println("2.- Numero de trabajadores y salario segun departamento");
+                    System.out.println("3.- Numero de Empleados");
                     System.out.println("0.- Salir");
 
                     op = getInt();
@@ -93,7 +94,17 @@ public class Main extends ComManIMpls{
                         case 1: //Lista de departamentos
                             nueva.deps();
                             break;
-                        case 2: //Lista de empleados
+                        case 2: //Lista de departamentos
+                            System.out.println("Introduzca el departamento:");
+                            String dept = getString();
+                            System.out.println("Introduzca 0 si desea obtener la lista de trabajadores");
+                            System.out.println("Introduzca 1 si desea obtener su salario");
+                            int numero = getInt();
+                            nueva.EmployeeByDepartment(dept,numero);
+
+
+                            break;
+                        case 3: //Lista de empleados
                             nueva.Employees();
                             break;
                     }
